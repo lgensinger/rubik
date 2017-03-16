@@ -1,0 +1,35 @@
+{
+  "name": "rubik",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lgensinger/rubik.git"
+  },
+  "keywords": [
+    "react",
+    "node",
+    "js",
+    "css",
+    "impress"
+  ],
+  "author": "lindsay gensinger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lgensinger/rubik/issues"
+  },
+  "homepage": "https://github.com/lgensinger/rubik#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}

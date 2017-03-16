@@ -1,0 +1,401 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*************************************** desktop STYLE ***************************************/
+
+/* Highest desktop specific styling. */
+
+/* !IMPORTS
+/* --- !typography
+/* !GLOBALS
+/* --- !basic
+/* --- !links
+/* --- !headers
+/* --- !copy
+/* --- !bold
+/* --- !figures
+/* --- !svg
+/* --- !lists
+/* --- !buttons
+/* --- !tables
+/* --- !forms
+/* --- !code
+/* !CUSTOM
+/* --- !active
+/* --- !chart
+
+/******************************* !IMPORTS *******************************/
+
+@import "typography";
+
+/******************************* !GLOBALS *******************************/
+
+/*******************/
+/***** !basic ******/
+/*******************/
+
+html, body {
+    
+    font-family: $sans-serif, sans-serif;
+    font-size: $copy-point-size;
+    
+}
+
+:hover {
+	
+	-o-transition: all 400ms;
+	-moz-transition: all 400ms;
+	-webkit-transition: -webkit-all 400ms;
+	transition: all 400ms;
+	
+}
+
+main {
+    
+    padding: 6em;
+    
+}
+
+main section > div {
+    
+    display: flex;
+    
+}
+
+/*******************/
+/***** !links ******/
+/*******************/
+
+a {
+
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+/*********************/
+/***** !headers ******/
+/*********************/
+
+hgroup, h1, h2, h3, h4, h5, h6 {
+    
+    line-height: $headline-leading;
+    max-width: $copy-max-width;
+    min-width: $copy-min-width;
+    text-transform: capitalize;
+    width: 60%;
+    
+}
+
+h1, h2, h3 {
+    
+    font-family: $sans-serif-2, sans-serif;
+    
+}
+
+h1 {
+    
+    font-size: $headline-size;
+    line-height: $headline-leading
+
+}
+
+h2, h3 {
+    
+    font-size: $subhead-size;
+    line-height: $subhead-leading
+    
+}
+
+main section > div > div:not(:last-child) {
+    
+    margin-right: 8em;
+    
+}
+
+main section > div > div > div > div {
+    
+    margin-bottom: 0.75em;
+    position: relative;
+    
+}
+
+main section > div > div > div > div span,
+main section > div > div > div > div form {
+    
+    position: absolute;
+    
+}
+
+main section > div > div > div > div span:first-of-type {
+    
+    border: 1px;
+    border-color: currentColor;
+    border-style: solid;
+    font-size: $copy-small-size;
+    left: 0;
+    padding-bottom: 0.1em;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    padding-top: 0.15em;
+    top: 0.25em;
+    text-align: center;
+    width: 1.15em;
+    
+}
+
+/* day name */
+main section > div > div > div > div p {
+    
+    left: 2.5em;
+    position: relative;
+    
+}
+
+main section > div > div > div > div span:last-of-type,
+main section > div > div > div > div form {
+    
+    cursor: pointer;
+    pointer-events: all;
+    right: 0;
+    top: 0.25em;
+    
+}
+
+main section > div > div > div > div form {
+    
+    right: -1.85em;
+    top: 0;
+    
+}
+
+h3 {
+    
+    font-size: 1.2em;
+    font-weight: $sans-serif-regular;
+    margin-bottom: 2em;
+    margin-top: 4em;
+    position: relative;
+    text-transform: none;
+    
+}
+
+/******************/
+/***** !copy ******/
+/******************/
+
+p, thead, tfoot, tbody, li, td, small {
+
+    line-height: $copy-leading;
+
+}
+
+small {
+    
+    display: block;
+    margin-top: 1em;
+    
+}
+
+/******************/
+/***** !bold ******/
+/******************/
+
+b, strong {
+    
+    font-weight: $sans-serif-bold;
+    
+}
+
+/*******************/
+/***** !lists ******/
+/*******************/
+
+li {
+    
+    list-style-type: disc;
+    margin-left: 2em;
+    padding-left: 0.5em;
+    
+}
+
+/*********************/
+/***** !buttons ******/
+/*********************/
+
+button {
+
+    border: 1px;
+    border-style: solid;
+    font-size: $button-regular;
+    padding: 0.5em;
+    pointer-events: all;
+    text-transform: capitalize;
+
+}
+
+/********************/
+/***** !tables ******/
+/********************/
+
+table p {
+    
+    margin-bottom: 0;
+    margin-top: 2em;
+    
+}
+
+thead {
+    
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    font-size: $table-header;
+    font-weight: $sans-serif-bold;
+    text-transform: uppercase;
+    
+}
+
+td, th {
+    
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    
+}
+
+th {
+    
+    padding-bottom: 0.75em;
+    padding-top: 0.75em;
+    
+}
+
+td {
+    
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    
+}
+
+tfoot td {
+    
+    border-bottom: none;
+    font-size: 0.75em;
+    
+}
+
+/*******************/
+/***** !forms ******/
+/*******************/
+
+form {
+    
+    margin: 0;
+    padding: 0;
+    
+}
+
+input[type="text"] {
+    
+    max-width: $copy-max-width;
+    min-width: $copy-min-width;
+    padding: 0.5em;
+    width: calc(100 - 1em);
+    
+}
+
+input[type="text"], textarea {
+    
+    margin-top: 0.5em;
+    
+}
+
+textarea {
+    
+    max-width: $copy-max-width;
+    min-width: $copy-min-width;
+    padding: 0.5em;
+    width: calc(100% - 1em);
+    
+}
+
+input[type="radio"] {
+    
+    display: none;
+    
+}
+
+input[type="radio"] + label {
+    
+    padding: 1.25em;
+    
+}
+
+input[type="radio"]:checked + label {
+    
+    text-transform: uppercase;
+    
+}
+
+input[type="radio"]:checked + label:before {
+    
+    text-transform: lowercase;
+    
+}
+
+input[disabled],
+button[disabled] {
+    
+    opacity: 0.3;
+    
+}
+
+label {
+    
+    display: none;
+    
+}
+
+/******************/
+/***** !code ******/
+/******************/
+
+pre {
+    
+    margin-bottom: 1em;
+    max-width: $code-max-width;
+    
+}
+
+code {
+    
+    display: inline-block;
+    font-family: $code, monospace;
+    font-size: $code-point-size;
+    padding: 2em;
+    width: 84%;
+    white-space: normal;
+    
+}
+
+/******************************* !CUSTOM *******************************/
+
+/********************/
+/***** !active ******/
+/********************/
+
+.active {
+    
+    font-weight: $sans-serif-black;
+    
+}
+
+.step {
+    
+    background: #333030;
+    height: 400px;
+    padding: 2em;
+    width: 400px;
+    
+}
