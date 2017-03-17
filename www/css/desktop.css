@@ -3,7 +3,6 @@
 /* Highest desktop specific styling. */
 /* !IMPORTS
 /* --- !typography
-/* --- !logos
 /* !GLOBALS
 /* --- !basic
 /* --- !links
@@ -160,7 +159,7 @@ h1, h2, h3 {
   font-family: "Oswald", sans-serif; }
 
 h1 {
-  font-size: 1.5em;
+  font-size: 1.15em;
   line-height: 1; }
 
 h2, h3 {
@@ -347,7 +346,15 @@ code {
   font-weight: 800; }
 
 .step {
-  background: #333030;
   height: 400px;
+  opacity: 0.93;
   padding: 2em;
   width: 400px; }
+
+#face-1,
+#face-2,
+#face-3,
+#face-4,
+#face-5,
+#face-6 {
+  background: none; }

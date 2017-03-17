@@ -26,7 +26,7 @@ html, body {
 html, body, p,
 h1, h2, h3, h4, h5, h6 {
 	
-	color: $mid-1-100;
+	color: $light-1-100;
 	
 }
 
@@ -77,13 +77,49 @@ main section:last-child {
 /* active */
 .active {
     
-    color: $light-4-100;
+    color: $light-1-100;
     
 }
 
 /* active nav */
 li.active {
     
-    color: $dark-4-100;
+    color: white;
+    
+}
+
+.color-1 {
+    
+    background: $color-1;
+    
+}
+
+.color-2 {
+    
+    background: $color-2;
+    
+}
+
+.color-3 {
+    
+    background: $color-3;
+    
+}
+
+.color-4 {
+    
+    background: $color-4;
+    
+}
+
+.color-5 {
+    
+    background: $color-5;
+    
+}
+
+.color-6 {
+    
+    background: $color-6;
     
 }

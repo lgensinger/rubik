@@ -33,7 +33,7 @@ html, body {
 
 html, body, p,
 h1, h2, h3, h4, h5, h6 {
-  color: #969696; }
+  color: #f0efef; }
 
 button {
   background-color: transparent;
@@ -58,8 +58,26 @@ button:active {
 /********************/
 /* active */
 .active {
-  color: #aaaaaa; }
+  color: #f0efef; }
 
 /* active nav */
 li.active {
-  color: #292929; }
+  color: white; }
+
+.color-1 {
+  background: #ac3a3a; }
+
+.color-2 {
+  background: #3a9aac; }
+
+.color-3 {
+  background: #95c94e; }
+
+.color-4 {
+  background: #4a3155; }
+
+.color-5 {
+  background: #0ecca8; }
+
+.color-6 {
+  background: #c3c3c3; }

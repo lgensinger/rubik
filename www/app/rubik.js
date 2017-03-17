@@ -1,5 +1,13 @@
 define(function(require) {
     
+    function getRandomInt(min, max) {
+        
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min)) + min;
+    
+    };
+    
     // data
     var faces = require("./data");
     
@@ -56,13 +64,13 @@ define(function(require) {
                 
                 // each cube face
                 this.state.faces.map(function(item, idx) {
-
+                    
                     return React.DOM.div(
 
                         // attributes
                         {
                             key: idx,
-                            className: "step",
+                            className: "step color-" + getRandomInt(1,6),
                             id: item.url_name,
                             "data-x": item.datax,
                             "data-y": item.datay,
