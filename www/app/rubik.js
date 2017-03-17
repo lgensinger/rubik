@@ -8,6 +8,8 @@ define(function(require) {
     
     };
     
+    var editableSquare = require("./editable-square/square");
+    
     // data
     var faces = require("./data");
     
@@ -27,7 +29,7 @@ define(function(require) {
         // set state
         getInitialState: function() {
             return {
-                faces: this.props.faces
+                data: this.props.faces
             }
         },
         
@@ -62,8 +64,26 @@ define(function(require) {
                     id: this.props.id
                 },
                 
-                // each cube face
-                this.state.faces.map(function(item, idx) {
+                // each cube face square
+                this.state.data.map(function(item, idx) {
+                    
+                    var _self = this;
+                    
+                    // save data from components
+                    function updateText(arg) {
+                        
+                        // clone data
+                        var updateData = _self.state.data.slice();
+
+                        // set new values
+                        updateData[arg.idx].text = arg.content;
+
+                        // set the state to reflect input
+                        _self.setState({
+                            data: updateData
+                        });
+
+                    };
                     
                     return React.DOM.div(
 
@@ -82,15 +102,11 @@ define(function(require) {
                         },
 
                         // item
-                        React.DOM.p(
-                            
-                            // attributes
-                            {},
-                            
-                            // content
-                            item.text
-                            
-                        )
+                        React.createElement(editableSquare, {
+                            content: item,
+                            idx: idx,
+                            updateText: updateText
+                        })
 
                     )
 
