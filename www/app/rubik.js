@@ -1,5 +1,16 @@
 define(function(require) {
     
+    // ESC
+    document.addEventListener("keyup", function(event) {
+
+        if (event.keyCode === 27) {
+
+            window.location.href = "#/intro";
+
+        }
+
+    });
+    
     function getRandomInt(min, max) {
         
         min = Math.ceil(min);
@@ -90,7 +101,7 @@ define(function(require) {
                         // attributes
                         {
                             key: idx,
-                            className: "step color-" + getRandomInt(1,6),
+                            className: idx == 0 ? "step" : item.url_name == "blanket" ? "step color-4" : "step color-" + getRandomInt(1,7),
                             id: item.url_name,
                             "data-x": item.datax,
                             "data-y": item.datay,

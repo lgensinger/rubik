@@ -32,7 +32,7 @@ html, body {
   background: #1a1a1a; }
 
 html, body, p,
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, input, textarea {
   color: #f0efef; }
 
 button {
@@ -65,19 +65,25 @@ li.active {
   color: white; }
 
 .color-1 {
-  background: #ac3a3a; }
+  background: #d41313; }
 
 .color-2 {
   background: #3a9aac; }
 
 .color-3 {
-  background: #95c94e; }
+  background: #6fa723; }
 
 .color-4 {
-  background: #4a3155; }
+  background: #e6e6e6; }
+
+.color-4 p {
+  color: #292929; }
 
 .color-5 {
-  background: #0ecca8; }
+  background: #ff6c00; }
 
 .color-6 {
-  background: #c3c3c3; }
+  background: #f7c805; }
+
+.color-6 p {
+  color: #464646; }

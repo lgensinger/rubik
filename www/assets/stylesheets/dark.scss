@@ -24,7 +24,7 @@ html, body {
 }
 
 html, body, p,
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, input, textarea {
 	
 	color: $light-1-100;
 	
@@ -112,6 +112,12 @@ li.active {
     
 }
 
+.color-4 p {
+    
+    color: $dark-4-100;
+    
+}
+
 .color-5 {
     
     background: $color-5;
@@ -121,5 +127,11 @@ li.active {
 .color-6 {
     
     background: $color-6;
+    
+}
+
+.color-6 p {
+    
+    color: $dark-2-100;
     
 }

@@ -25,7 +25,7 @@ define(function (require) {
                 null,
 
                 // input
-                React.DOM.input({
+                React.DOM.textarea({
                     type: "text",
                     id: "select-" + this.props.idx,
                     name: "select-" + this.props.idx,

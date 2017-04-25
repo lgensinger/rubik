@@ -86,9 +86,9 @@ define(function (require) {
                 
                 // attributes
                 {
-                    onDoubleClick: this._showEditor/*,
+                    onDoubleClick: this._showEditor,
                     onBlur: this._save,
-                    onChange: this._save*/
+                    onChange: this._save
                 },
                     
                 // content

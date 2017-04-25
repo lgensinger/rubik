@@ -124,7 +124,7 @@
 /*******************/
 html, body {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px; }
+  font-size: 36px; }
 
 :hover {
   -o-transition: all 400ms;
@@ -299,10 +299,8 @@ input[type="text"], textarea {
   margin-top: 0.5em; }
 
 textarea {
-  max-width: 600px;
-  min-width: 300px;
-  padding: 0.5em;
-  width: calc(100% - 1em); }
+  height: 400px;
+  width: 400px; }
 
 input[type="radio"] {
   display: none; }
@@ -346,9 +344,10 @@ code {
   font-weight: 800; }
 
 .step {
+  cursor: pointer;
   height: 400px;
   opacity: 0.93;
-  padding: 2em;
+  padding: 1em;
   width: 400px; }
 
 #face-1,
